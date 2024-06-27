@@ -1,8 +1,7 @@
 import { Router } from "express";
 import { ListUsersController } from "../controllers/ListUsersController";
+import { makeListUsersController } from "../factories/ListUsersControllerFactory";
 
 const userRouter = Router();
 
-const listUsersController = new ListUsersController()
-
-userRouter.get('/users', listUsersController.handle)
+userRouter.get('/users', makeListUsersController().handle)
