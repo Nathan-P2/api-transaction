@@ -16,6 +16,7 @@
     "resolveJsonModule": true,
     "alwaysStrict": true,
     "removeComments": true,
+    "types": ["@types/jest"],
     "noImplicitReturns": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
